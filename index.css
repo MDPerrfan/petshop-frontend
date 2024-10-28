@@ -1,0 +1,197 @@
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: outfit;
+    }
+    
+    .navbar {
+        box-shadow: 0px 1px 4px rgb(189, 189, 189);
+        position: sticky;
+        height: 70px;
+    }
+    
+    .navbar ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        padding: 20px;
+        font-size: 18px;
+    }
+    
+    .navbar ul li .link {
+        cursor: pointer;
+        position: relative;
+        transition: all .3s ease-out;
+        color: #414141;
+        text-decoration: none;
+    }
+    
+    .navbar ul li .link:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 2.5px;
+        width: 0;
+        border-radius: 14px;
+        background: #fd7418;
+        bottom: -5px;
+        left: 0;
+        z-index: -1;
+        transition: width .3s ease-out;
+    }
+    
+    .navbar ul li .link:hover:after {
+        width: 100%;
+    }
+    
+    .hidden {
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(5px);
+        transform: translateX(100%);
+    }
+    
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+    
+    .header {
+        animation: fadeIn 2s;
+        font-size: 50px;
+    }
+    
+    .des {
+        color: #7b7b7b;
+        animation: fadeIn 4s;
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    #btn {
+        width: 50%;
+        margin-top: 2rem;
+        border: 1px solid black;
+        padding: 15px;
+        border-radius: 30px;
+        background-color: rgb(37, 37, 37);
+        color: white;
+    }
+    
+    #btn2 {
+        width: 50%;
+        margin-top: 10px;
+        border: 2px solid rgb(44, 44, 44);
+        padding: 15px;
+        border-radius: 30px;
+    }
+    
+    .card {
+        transition: transform 0.3s ease;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card:hover {
+        transform: scale(1.01);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-btn {
+        border: 2px white solid;
+        border-radius: 25px;
+        padding: 10px;
+        color: white;
+        font-weight: 600;
+    }
+    
+    .card-btn2 {
+        border: 2px rgb(48, 48, 48) solid;
+        border-radius: 25px;
+        padding: 10px;
+        font-weight: 600;
+        width: 80%;
+    }
+    
+    .card-btn:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+    
+    .card-btn2:hover {
+        background-color: rgb(46, 46, 46);
+        color: rgb(255, 255, 255);
+    }
+    
+    #card1 {
+        background-image: linear-gradient(45deg, rgb(79, 56, 48), rgba(102, 75, 67, 0.771));
+        /* Coral to light coral gradient */
+    }
+    
+    #card2 {
+        background-image: linear-gradient(45deg, rgb(240, 155, 76), rgb(240, 184, 113));
+        /* Coral to light coral gradient */
+    }
+    
+    #card4 {
+        background-image: linear-gradient(45deg, rgb(73, 116, 179), rgb(48, 73, 111));
+        /* Coral to light coral gradient */
+    }
+    
+    #card5 {
+        background-image: linear-gradient(45deg, rgb(56, 128, 139), rgb(91, 150, 159));
+        /* Coral to light coral gradient */
+    }
+    
+    #card6 {
+        background-image: linear-gradient(45deg, rgb(139, 107, 56), rgb(250, 182, 141));
+        /* Coral to light coral gradient */
+    }
+    
+    .location {
+        margin-top: 10rem;
+        border-radius: 20px;
+        background-color: rgb(255, 130, 85);
+        height: 55vh;
+        padding: 2rem;
+        width: 100%;
+    }
+    /* Small screens (tablets) - screens 768px to 991px */
+    
+    @media (max-width: 991px) {
+        .hero {
+            height: 380px;
+        }
+        .header {
+            font-size: 45px;
+        }
+    }
+    /* Extra small screens (large smartphones) - screens 576px to 767px */
+    
+    @media (max-width: 767px) {
+        .hero {
+            height: 300px;
+        }
+        .header {
+            font-size: 30px;
+        }
+    }
+    /* Very small screens (small smartphones) - screens under 576px */
+    
+    @media (max-width: 575px) {
+        .hero {
+            height: 300px;
+        }
+        .header {
+            font-size: 25px;
+        }
+    }
