@@ -230,7 +230,6 @@
         border-radius: 25px;
         padding: 10px;
         font-weight: 600;
-        width: 80%;
     }
     
     .card-btn:hover {
@@ -271,7 +270,7 @@
     .location {
         margin-top: 10rem;
         border-radius: 10px;
-        background-color: rgb(255, 130, 85);
+        background-color: rgb(253, 154, 111);
         height: 55vh;
         padding: 2rem;
         width: 100%;
