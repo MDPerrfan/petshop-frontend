@@ -1,4 +1,3 @@
-live here: https://bdpetshop.netlify.app
 ```markdown
 # PetShop Website
 
@@ -71,7 +70,7 @@ PetShop/
 
 Here’s a screenshot of the homepage:
 
-![Homepage Screenshot](https://via.placeholder.com/800x400.png?text=PetShop+Homepage)
+![Homepage Screenshot](https://raw.githubusercontent.com/MDPerrfan/petshop-frontend/refs/heads/main/BD%20_%20PETSHOP%20and%205%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%2028_10_2024%2021_20_26.png)
 
 
 ## Contributing
